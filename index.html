@@ -2,10 +2,22 @@
 <html lang="bt-br">
 
 <head>
+
+    <link rel="stylesheet" href="/estilos/reset.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos/reset.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/estilos/estilos.css">
+
     <title>DrivenEats</title>
 </head>
 
@@ -17,17 +29,83 @@
         <!--Aqui é a marca e o tempo de entrega-->
         <header>
             <div class="header__marca">
-                <h1></h1>
+                <h1>DrivenEats</h1>
             </div>
             <div class="header__descricao">
-                <h2></h2>
+                <h2>Sua comida em 6 minutos</h2>
             </div>
         </header>
 
+        <div class="espace"></div>
+
         <!--Todas as opcoes de compra-->
-        <main>
+        <main class="escolher-comida">
             <!--Todos os pratos-->
             <section class="categoria__pratos">
+                <div class="categoria__titulo">
+                    <h3>Primeiro, seu prato</h3>
+                </div>
+                <div class="categoria__opcoes">
+
+                    <!--Uma opção de compra-->
+                    <div class="opcao__prato">
+
+                        <div class="opcao__imagem">
+                            <img src="/imagens/pratos/ala_minuta.jpg" alt="prato ala minuta">
+                        </div>
+
+                        <div class="opcao__nome">
+                            <h4>A La Minuta</h4>
+                        </div>
+
+                        <div class="opcao__descricao">
+                            <p>Arroz branco, batata frita, fíle bovino, e salada do dia</p>
+                        </div>
+
+                        <div class="opcao__preco">
+                            <p>R$ 25,90</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!--Todas as bebidas-->
+            <section class="categoria__bebidas">
+                <div class="categoria__titulo">
+                    <h3></h3>
+                </div>
+                <div class="categoria__opcoes">
+
+                    <!--Uma opção de compra-->
+                    <div class="opcao__bebida">
+
+                        <div class="opcao__imagem">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="opcao__nome">
+                            <h4></h4>
+                        </div>
+
+                        <div class="opcao__descricao">
+                            <p></p>
+                        </div>
+
+                        <div class="opcao__preco">
+                            <p></p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!--Todas as sobremesas-->
+            <section class="categoria__sobremesas">
                 <div class="categoria__titulo">
                     <h3></h3>
                 </div>
@@ -58,77 +136,16 @@
                 </div>
             </section>
 
-            <!--Todas as bebidas-->
-            <section class="categoria__bebidas">
-                <div class="categoria__titulo">
-                    <h3></h3>
-                </div>
-                <div class="categoria__opcoes">
 
-                     <!--Uma opção de compra-->
-                    <div class="opcao__bebida">
-
-                        <div class="opcao__imagem">
-                            <img src="" alt="">
-                        </div>
-
-                        <div class="opcao__nome">
-                            <h4></h4>
-                        </div>
-
-                        <div class="opcao__descricao">
-                            <p></p>
-                        </div>
-
-                        <div class="opcao__preco">
-                            <p></p>
-                        </div>
-                        
-                    </div>
-
-
-                </div>
-            </section>
-
-            <!--Todas as sobremesas-->
-            <section class="categoria__sobremesas">
-                <div class="categoria__titulo">
-                    <h3></h3>
-                </div>
-                <div class="categoria__opcoes">
-
-                     <!--Uma opção de compra-->
-                     <div class="opcao__prato">
-
-                        <div class="opcao__imagem">
-                            <img src="" alt="">
-                        </div>
-
-                        <div class="opcao__nome">
-                            <h4></h4>
-                        </div>
-
-                        <div class="opcao__descricao">
-                            <p></p>
-                        </div>
-
-                        <div class="opcao__preco">
-                            <p></p>
-                        </div>
-                        
-                    </div>
-
-
-                </div>
-            </section>
-
-            
 
         </main>
 
         <footer class="fechar-pedido">
             <div>
-                <button class="fechar-pedido__btn"></button>
+                <button class="fechar-pedido__btn">
+                    <p>Selecione os 3 itens</p>
+                    <p>para fechar o pedido</p>
+                </button>
             </div>
 
         </footer>
