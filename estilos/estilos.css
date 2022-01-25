@@ -7,6 +7,7 @@ body{
     background-color: #e5e5e5;
 }
 
+
 .header__marca, .categoria__titulo{
     font-family: 'Righteous', cursive;
 }
@@ -16,12 +17,14 @@ header{
     top: 0 px;
     left: 0px;
     right: 0px;
-
+    
     height: 92px;
-
+    
     background-color: #CF2B2B;
-
+    
     box-shadow: 0px 0px 4px 6px rgba(0,0,0,0.25);
+
+    z-index: 2;
 }
 
 .espace{
@@ -32,7 +35,7 @@ header{
     margin-left: 21px;
     margin-top: 8px;
     margin-bottom: 5px;
-
+    
     font-weight: 400;
     font-style: regular;
     font-size: 44px;
@@ -48,22 +51,39 @@ header{
     color: #fff;
 }
 
+.escolher-comida{
+    margin-bottom: 116px;
+}
+
 .categoria__titulo{
     font-weight: 400;
     font-size: 26px;
     font-style: normal;
     color: #222;
-
+    
     margin-left: 19px;
-    margin-bottom: 17px;
+    margin-bottom: 5px;
 }
 
+.categoria__opcoes{
+    display: flex;
+    align-items: center;
+    height: 250px;
+
+    overflow-x: scroll;
+}
+
+.categoria__opcoes > div:last-child{
+    margin-right: 20px;
+}
 
 .opcao__prato, .opcao__bebida, .opcao__sobremesa{
     width: 172px;
+    height: 220px;
     margin-left: 16px;
 
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     
@@ -72,6 +92,8 @@ header{
     border-radius: 9px;
 
     box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 15%);
+
+    position: relative;
 
 }
 
@@ -108,6 +130,11 @@ header{
     font-weight: 400;
     font-size: 16px;
     color: #000;
+    
+    position: absolute;
+
+    bottom: -5px;
+    left: 14px;
 
 }
 
