@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #e5e5e5;
@@ -16,7 +18,7 @@ header{
     position: fixed;
     top: 0 px;
     left: 0px;
-    right: 0px;
+    width: 100vw;
     
     height: 92px;
     
@@ -26,6 +28,8 @@ header{
 
     z-index: 2;
 }
+
+
 
 .espace{
     height:123px;
@@ -53,6 +57,8 @@ header{
 
 .escolher-comida{
     margin-bottom: 116px;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .categoria__titulo{
@@ -65,10 +71,26 @@ header{
     margin-bottom: 5px;
 }
 
-.categoria__opcoes{
+.categoria__opcoes-pratos{
     display: flex;
     align-items: center;
     height: 250px;
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.categoria__opcoes-bebidas{
+    display: flex;
+    align-items: center;
+    height: 270px;
+
+    overflow-x: scroll;
+}
+
+.categoria__opcoes-sobremesas{
+    display: flex;
+    align-items: center;
+    height: 270px;
 
     overflow-x: scroll;
 }
@@ -79,11 +101,12 @@ header{
 
 .opcao__prato, .opcao__bebida, .opcao__sobremesa{
     width: 172px;
+    min-width: 172px;
     height: 220px;
     margin-left: 16px;
 
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     
@@ -97,8 +120,17 @@ header{
 
 }
 
+.opcao__bebida{
+    height: 240px;
+}
+
+.opcao__sobremesa{
+    height: 230px;
+}
+
 .opcao__imagem, .opcao__nome, .opcao__descricao, .opcao__preco{
     width: 144px;
+
 }
 
 .opcao__imagem img{
@@ -142,8 +174,8 @@ footer{
     position: fixed;
     bottom: 0px;
     left: 0px;
-    right: 0px;
-
+    
+    width: 100vw;
     height:92px;
     background-color: #fff;
 
@@ -157,7 +189,7 @@ footer{
 
 footer button{
     height: 61px;
-    width: 364px;
+    width: 87vw;
 
     border-radius: 50px;
     border: none;
