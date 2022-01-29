@@ -48,28 +48,27 @@
                 <div class="categoria__opcoes-pratos">
 
                     <!--Uma opção de compra-->
-                    <div class="opcao__prato" data-identifier="food-option">
+                    <div class="opcao__prato selecionado" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-pratos',this)">
+                            <div class="opcao__imagem">
+                                <img src="/imagens/pratos/ala_minuta.jpg" alt="prato ala minuta">
+                            </div>
 
-                        <div class="opcao__imagem">
-                            <img src="/imagens/pratos/ala_minuta.jpg" alt="prato ala minuta">
-                        </div>
+                            <div class="opcao__nome" data-identifier="food-title">
+                                <h4>A La Minuta</h4>
+                            </div>
 
-                        <div class="opcao__nome" data-identifier="food-title">
-                            <h4>A La Minuta</h4>
-                        </div>
+                            <div class="opcao__descricao">
+                                <p>Arroz branco, batata frita, fíle bovino, e salada do dia</p>
+                            </div>
 
-                        <div class="opcao__descricao">
-                            <p>Arroz branco, batata frita, fíle bovino, e salada do dia</p>
-                        </div>
-
-                        <div class="opcao__preco" data-identifier="food-price">
-                            <p>R$ 25,90</p>
-                        </div>
-
+                            <div class="opcao__preco" data-identifier="food-price">
+                                <p>R$ 25,90</p>
+                            </div>
+                            <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <!--Uma opção de compra-->
-                    <div class="opcao__prato" data-identifier="food-option">
+                    <div class="opcao__prato" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-pratos',this)">
 
                         <div class="opcao__imagem">
                             <img src="/imagens/pratos/carbonara.jpg" alt="">
@@ -86,11 +85,11 @@
                         <div class="opcao__preco" data-identifier="food-price">
                             <p>RS 17,50</p>
                         </div>
-
+                        <ion-icon class="check-icon escondido" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <!--Uma opção de compra-->
-                    <div class="opcao__prato" data-identifier="food-option">
+                    <div class="opcao__prato" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-pratos',this)">
 
                         <div class="opcao__imagem">
                             <img src="/imagens/pratos/salada.webp" alt="Uma salada no prato">
@@ -107,7 +106,7 @@
                         <div class="opcao__preco" data-identifier="food-price">
                             <p>R$ 13,50</p>
                         </div>
-
+                        <ion-icon class="check-icon escondido" name="checkmark-circle"></ion-icon>
                     </div>
 
 
@@ -115,14 +114,14 @@
             </section>
 
             <!--Todas as bebidas-->
-            <section class="categoria__bebidas" data-identifier="drinks">
+            <section class="categoria__bebidas" data-identifier="drinks" >
                 <div class="categoria__titulo">
                     <h3>Agora, sua bebida</h3>
                 </div>
                 <div class="categoria__opcoes-bebidas">
 
                     <!--Uma opção de compra-->
-                    <div class="opcao__bebida" data-identifier="food-option">
+                    <div class="opcao__bebida" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-bebidas',this)">
 
                         <div class="opcao__imagem">
                             <img src="/imagens/bebidas/coca_220.jpg" alt="Coca-cola lata de 220 ml">
@@ -139,11 +138,11 @@
                         <div class="opcao__preco" data-identifier="food-price">
                             <p>R$ 2,90</p>
                         </div>
-
+                        <ion-icon class="check-icon escondido" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <!--Uma opção de compra-->
-                    <div class="opcao__bebida" data-identifier="food-option">
+                    <div class="opcao__bebida" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-bebidas',this)">
 
                         <div class="opcao__imagem">
                             <img src="/imagens/bebidas/coca_350.webp" alt="Coca-cola lata de 350 ml">
@@ -160,11 +159,11 @@
                         <div class="opcao__preco" data-identifier="food-price">
                             <p>R$ 3,50</p>
                         </div>
-
+                        <ion-icon class="check-icon escondido" name="checkmark-circle"></ion-icon>
                     </div>
 
                     <!--Uma opção de compra-->
-                    <div class="opcao__bebida" data-identifier="food-option">
+                    <div class="opcao__bebida" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-bebidas',this)">
 
                         <div class="opcao__imagem">
                             <img src="/imagens/bebidas/tonica.webp" alt="Agua Tônica lata de 350 ml">
@@ -181,7 +180,7 @@
                         <div class="opcao__preco" data-identifier="food-price">
                             <p>R$ 4,35</p>
                         </div>
-
+                        <ion-icon class="check-icon escondido" name="checkmark-circle"></ion-icon>
                     </div>
 
 
@@ -196,7 +195,7 @@
                 <div class="categoria__opcoes-sobremesas">
 
                     <!--Uma opção de compra-->
-                    <div class="opcao__sobremesa" data-identifier="food-option">
+                    <div class="opcao__sobremesa" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-sobremesas',this)">
 
                         <div class="opcao__imagem">
                             <img src="/imagens/sobremesas/Sagu.png" alt="sagu">
@@ -213,11 +212,11 @@
                         <div class="opcao__preco" data-identifier="food-price">
                             <p>R$ 4,00</p>
                         </div>
-
+                        <ion-icon class="check-icon escondido" name="checkmark-circle"></ion-icon>
                     </div>
 
-                     <!--Uma opção de compra-->
-                     <div class="opcao__sobremesa" data-identifier="food-option">
+                    <!--Uma opção de compra-->
+                    <div class="opcao__sobremesa" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-sobremesas',this)">
 
                         <div class="opcao__imagem">
                             <img src="/imagens/sobremesas/tortinha_de_limao_2.png" alt="Tortinha de Limão">
@@ -234,11 +233,11 @@
                         <div class="opcao__preco" data-identifier="food-price">
                             <p>R$ 5,00</p>
                         </div>
-
+                        <ion-icon class="check-icon escondido" name="checkmark-circle"></ion-icon>
                     </div>
 
-                     <!--Uma opção de compra-->
-                     <div class="opcao__sobremesa" data-identifier="food-option">
+                    <!--Uma opção de compra-->
+                    <div class="opcao__sobremesa" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-sobremesas',this)">
 
                         <div class="opcao__imagem">
                             <img src="/imagens/sobremesas/mousse-de-maracuja.jpeg" alt="">
@@ -255,7 +254,7 @@
                         <div class="opcao__preco" data-identifier="food-price">
                             <p>R$ 3,60</p>
                         </div>
-
+                        <ion-icon class="check-icon escondido" name="checkmark-circle"></ion-icon>
                     </div>
 
 
@@ -277,6 +276,11 @@
         </footer>
 
     </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/script/script.js"></script>
 </body>
 
 </html>
