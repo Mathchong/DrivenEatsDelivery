@@ -48,7 +48,7 @@
                 <div class="categoria__opcoes-pratos">
 
                     <!--Uma opção de compra-->
-                    <div class="opcao__prato selecionado" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-pratos',this)">
+                    <div class="opcao__prato" data-identifier="food-option" onclick="selecionarAlimento('.categoria__opcoes-pratos',this)">
                             <div class="opcao__imagem">
                                 <img src="/imagens/pratos/ala_minuta.jpg" alt="prato ala minuta">
                             </div>
@@ -267,9 +267,8 @@
 
         <footer class="fechar-pedido">
             <div>
-                <button class="fechar-pedido__btn">
-                    <p>Selecione os 3 itens</p>
-                    <p>para fechar o pedido</p>
+                <button class="fechar-pedido__btn" onclick="fecharPedido()">
+                    <p>Selecione os 3 itens<br>para fechar o pedido</p>
                 </button>
             </div>
 
