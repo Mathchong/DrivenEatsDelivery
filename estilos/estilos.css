@@ -2,9 +2,19 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
 button{
     border: none;
-    background: transparent
+    background: transparent;
 }
 
 body{
@@ -125,6 +135,8 @@ header{
 
     border: 5px solid #fff;
 
+    cursor: pointer;
+
 }
 
 .check-icon{
@@ -229,7 +241,10 @@ footer button{
 
 .btn-verde{
     background-color: #32B72F;
+    cursor: pointer;
 }
+
+
 
 
 
