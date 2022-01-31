@@ -30,7 +30,7 @@ body{
 
 header{
     position: fixed;
-    top: 0 px;
+    top: 0px;
     left: 0px;
     width: 100vw;
     
@@ -243,8 +243,4 @@ footer button{
     background-color: #32B72F;
     cursor: pointer;
 }
-
-
-
-
 

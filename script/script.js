@@ -66,7 +66,7 @@ function criarLink() {
     precoTotal = precoPrato + precoBebida + precoSobremesa
     precoTotal = precoTotal.toFixed(2)
 
-    let mensagem = "https://wa.me/552120180816?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0a-%20Prato:%20" + nomePrato.innerText +"%0a-%20Bebida:%20" +nomeBebida.innerText + "%0a-%20Sobremesa:%20" + nomeSobremesa.innerText + "%0aTotal:%20R$%20"+ precoTotal + "%0a%0aNome:%20Fulano%0aEndereço:%20Rua..."
+    let mensagem = "https://wa.me/552120180816?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0a-%20Prato:%20" + nomePrato.innerText +"%0a-%20Bebida:%20" +nomeBebida.innerText + "%0a-%20Sobremesa:%20" + nomeSobremesa.innerText + "%0aTotal:%20R$%20"+ precoTotal
     mensagem = mensagem.replaceAll(" ","%20")
 
     return mensagem
